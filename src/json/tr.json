@@ -1,6 +1,6 @@
 ﻿{
-	"language": "Dil",
+	"language": "dil",
 	"one": "bir",
 	"two": "iki",
-	"description": "Lorem Ipsum'un birçok geçiş pasajı mevcut, ancak çoğunluk, enjekte edilen mizah ya da hafif inandırıcı görünmeyen rastgele kelimeler vasıtasıyla bazı biçimlerde değişikliğe uğradı. Lorem Ipsum'un bir pasajını kullanacaksanız, metnin ortasında utanç verici bir şey gizli olmadığından emin olmanız gerekir. Internet'teki tüm Lorem Ipsum jeneratörleri, önceden tanımlanmış parçalar tekrarlamaya meyillidir; bu da, bu bilgiyi İnternetteki ilk gerçek jeneratör haline getirir. Makul görünen Lorem Ipsum'u oluşturmak için, 200'den fazla Latin kelimesi içeren ve bir avuç cümle yapısıyla birleştirilen bir sözlük kullanır. Oluşturulan Lorem Ipsum, bu nedenle daima tekrar, enjekte mizah ya da karakteristik olmayan kelimeler vb. Içermez."
+	"description": "Basit bir html5 dil desteği"
 }
