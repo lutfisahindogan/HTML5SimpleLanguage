@@ -17,7 +17,7 @@
 		if (!callback) callback = function(){};
 
 		if(!options.localize_json){
-			options.localize_json = '../src/json/'+options.localize+'.json';
+			options.localize_json = 'scripts/lang/json/'+options.localize+'.json';
 		}
 		
 		this.resources = this.getFile(options.localize_json);
@@ -89,5 +89,13 @@
 			attrText = attrText.replace(replaceKey,langKeyValue);
 			currentElement.setAttribute(attr,attrText);
 		}
-	}
+	}	
+
+    getKey(key) {
+        var langKeyValue = this.resources[key];
+        if (langKeyValue) {
+            return langKeyValue;
+        }
+        return key;
+    }
 }
