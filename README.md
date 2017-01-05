@@ -20,14 +20,18 @@ Also, for more than one attribute, you just need to put ",".
 Html attributes and part you want to change the subject to be in this situation if both the following example will tell you everything.
 <pre><code>&lt;p data-lang-type="all" data-lang-type="title,value" title="{{key}}" value="{{key2}}"&gt;{{key3}}&lt;/p&gt;</code></pre>
 
-We can easily learn the counter of the key we want
+A simple example
+
 <pre><code>&lt;script&gt;
-var language = new langSystem({
-    localize: 'tr'
-});
+    var language = new langSystem({
+        localize: 'tr'
+    });
+&lt;/script&gt;</code></pre>
 
-var value = language.getKey('January');
+We can easily learn the counter of the key we want
 
+<pre><code>&lt;script&gt;
+    var value = language.getKey('January');
 &lt;/script&gt;</code></pre>
 
 With the demo project you will find in it, you no longer need to use many libraries for simple language support.
