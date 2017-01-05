@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Language HTML5</title>
+</head>
+<body>
+    <div>
+        <label data-lang-type="html">{{language}} : </label>
+        <select onchange="LangChange(this.value)" id="LangSelect">
+            <option value="tr">TR</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+        </select>
+    </div>
+    <div>
+        <label data-lang-type="all" data-lang-attr="title" title="{{two}}">{{one}}</label>
+    </div>
+    <div>
+        <p data-lang-type="html">{{description}}</p>
+    </div>
+
+    <script src="../src/lang.js"></script>
+    <script>
+        var lang = sessionStorage.getItem('lang');
+        if (!lang) { sessionStorage.setItem('lang', 'tr'); lang = 'tr' }
+        document.getElementById('LangSelect').value = lang;
+		
+        var item = new langSystem({
+            localize: lang,
+			localize_json : '../src/json/'+lang+'.json'
+        });
+
+        function LangChange(langStr) {
+            sessionStorage.setItem('lang', langStr);
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
